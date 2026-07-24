@@ -1,0 +1,89 @@
+aid: butn
+name: Butn
+review:
+  question: Does Butn operate a public, self-serve developer portal with downloadable API specifications?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Butn is an Australian embedded-finance provider (invoice finance, outsourced
+    credit terms, and supplier "pay now" via its Butn X, Butn Terms, and Butn Pay
+    products) whose home market is Australia. It markets itself to platform
+    partners as "plug and play" embeddable funding, which implies partner-facing
+    integration APIs, but it does NOT expose a public developer surface. No
+    developer/docs/api subdomain resolves and no documentation path is published:
+    developer.butn.co, developers.butn.co, docs.butn.co, and api.butn.co all fail
+    to resolve (DNS/connection failure, curl exit — no HTTP response), and
+    www.butn.co/developers, /docs, /api, and /api-docs all return HTTP 404. The
+    primary domain butn.com.au 301-redirects to the canonical marketing site
+    https://www.butn.co/ (HTTP 200), which is a Webflow-hosted brochure site with
+    no API reference, no interactive console, and no download links. No
+    downloadable OpenAPI/Swagger/Postman/GraphQL/gRPC artifact was found anywhere,
+    so none were harvested (0 specs). Authentication model, webhook/event catalog,
+    and any ISO 20022 posture are not publicly documented because there is no
+    public API program; access to Butn's technology is provisioned to integration
+    partners privately rather than through open onboarding. Third-party directory
+    API Tracker (apitracker.io/a/butn-co) corroborates this: it categorizes Butn
+    under Business Lending / B2B BNPL and lists API style, docs, auth, webhooks,
+    sandbox, rate limits, and OpenAPI all as unavailable.
+  homeMarket: Australia
+  developerPortal:
+    url: ""
+    confirmed: false
+    note: No developer portal located; all probed developer/docs/api hosts and paths failed to resolve or returned 404.
+  probes:
+    - url: https://butn.com.au
+      status: 200
+      note: 301-redirects to https://www.butn.co/ (canonical marketing site).
+    - url: https://www.butn.co/
+      status: 200
+      note: Webflow marketing site; no API/developer content.
+    - url: https://developer.butn.co
+      status: 000
+      note: Does not resolve (no HTTP response).
+    - url: https://developers.butn.co
+      status: 000
+      note: Does not resolve (no HTTP response).
+    - url: https://docs.butn.co
+      status: 000
+      note: Does not resolve (no HTTP response).
+    - url: https://api.butn.co
+      status: 000
+      note: Does not resolve (no HTTP response).
+    - url: https://www.butn.co/developers
+      status: 404
+    - url: https://www.butn.co/docs
+      status: 404
+    - url: https://www.butn.co/api
+      status: 404
+    - url: https://www.butn.co/api-docs
+      status: 404
+  specsHarvested: 0
+  authModel: Not publicly documented (no public API program; partner-provisioned integration only).
+  webhooks: Not publicly documented.
+  postman: None found.
+  graphql: None found.
+  iso20022: Not applicable / not documented — Butn is a financing layer over Australian rails, not a scheme or clearing operator, and publishes no scheme documentation.
+  transports:
+    - protocol: HTTPS
+      scheme: https
+      documented: false
+      note: Marketing site only; no documented API transport, base URL, or endpoints are published.
+sources:
+  - url: https://www.butn.co/
+    type: Website
+    note: Canonical marketing site (Webflow); describes embedded funding products but no API reference.
+  - url: https://www.butn.co/funding-solutions
+    type: Documentation
+    note: Product/funding-solutions overview (Butn X, Butn Terms, Butn Pay).
+  - url: https://apitracker.io/a/butn-co
+    type: Reference
+    note: Third-party API directory; lists Butn under Business Lending / B2B BNPL with all API technical fields marked unavailable.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Bootstrap identity captured with an empty apis[] block because Butn publishes
+    no public, documented API and no downloadable specification could be
+    harvested. Classified as built-stub: real company identity and honest API
+    posture recorded; no fabricated hosts, specs, endpoints, or scopes.

@@ -1,0 +1,67 @@
+aid: butn
+url: https://raw.githubusercontent.com/api-evangelist/butn/refs/heads/main/apis.yml
+name: Butn
+kind: company
+description: >-
+  Butn is an Australian embedded-finance company that funds business cashflow at
+  the point of transaction, plugging invoice finance, outsourced credit terms,
+  and supplier "pay now, settle later" directly into the platforms its business
+  customers already use. Its funding products — Butn X (invoice finance to draw
+  cash early against receivables), Butn Terms (outsourced buyer credit where Butn
+  carries the risk), and Butn Pay (paying suppliers upfront in exchange for
+  extended repayment) — are designed to be embedded into partner marketplaces,
+  accounting tools, and B2B platforms such as MYOB, Salesforce, and FoodByUs
+  rather than sold as a standalone destination. Butn sits in the spend / accounts
+  payable and accounts receivable financing layer of Australia's payments market,
+  where money movement rides the New Payments Platform and the banks opened by
+  the Consumer Data Right. Its integration and embedding are delivered through
+  private, partner-provisioned APIs: Butn markets "plug and play" embedding for
+  partners but does not operate a public self-serve developer portal, publish
+  downloadable OpenAPI/Swagger definitions, or expose openly documented API
+  reference material as of this profile.
+accessModel:
+  pricing: unknown
+  onboarding: partner
+  trial: false
+  try_now: false
+  public: false
+  label: Partner-provisioned · No public self-serve API
+  confidence: high
+  source:
+  - website
+  generated: '2026-07-24'
+  method: manual
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Payments
+- Australia
+- Embedded Finance
+- Invoice Finance
+- Accounts Receivable
+- Accounts Payable
+- B2B BNPL
+- Business Lending
+- Cashflow
+- Working Capital
+created: '2026-07-24'
+modified: '2026-07-24'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.butn.co/
+- type: Documentation
+  url: https://www.butn.co/funding-solutions
+- type: Blog
+  url: https://www.butn.co/news
+- type: Support
+  url: https://www.butn.co/contact
+- type: TermsOfService
+  url: https://www.butn.co/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.butn.co/privacy-policy
+- type: LinkedIn
+  url: https://au.linkedin.com/company/butn
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
