@@ -45,9 +45,12 @@ tags:
 - Working Capital
 created: '2026-07-24'
 modified: '2026-07-24'
+lastEnriched: '2026-07-24'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/butn-domain-security.yml
 - type: Website
   url: https://www.butn.co/
 - type: Documentation
@@ -62,6 +65,8 @@ common:
   url: https://www.butn.co/privacy-policy
 - type: LinkedIn
   url: https://au.linkedin.com/company/butn
+- type: Login
+  url: https://app.butn.co/s/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
