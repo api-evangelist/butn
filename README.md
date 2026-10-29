@@ -1,4 +1,4 @@
-# Butn (butn)
+# Butn
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,51 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Butn is an Australian embedded-finance company that funds business cashflow at the point of transaction, plugging invoice finance, outsourced credit terms, and supplier "pay now, settle later" directly into the platforms its business customers already use. It sits in the spend / accounts-payable and accounts-receivable financing layer of Australia's payments market.
+Butn is an Australian embedded-finance company that funds business cashflow at the point of transaction, plugging invoice finance, outsourced credit terms, and supplier "pay now, settle later" directly into the platforms its business customers already use. Its funding products — Butn X (invoice finance to draw cash early against receivables), Butn Terms (outsourced buyer credit where Butn carries the risk), and Butn Pay (paying suppliers upfront in exchange for extended repayment) — are designed to be embedded into partner marketplaces, accounting tools, and B2B platforms such as MYOB, Salesforce, and FoodByUs rather than sold as a standalone destination. Butn sits in the spend / accounts payable and accounts receivable financing layer of Australia's payments market, where money movement rides the New Payments Platform and the banks opened by the Consumer Data Right. Its integration and embedding are delivered through private, partner-provisioned APIs: Butn markets "plug and play" embedding for partners but does not operate a public self-serve developer portal, publish downloadable OpenAPI/Swagger definitions, or expose openly documented API reference material as of this profile.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/butn/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/butn/refs/heads/main/apis.yml)
+**Areas:** Payments · Australia · Embedded Finance · Invoice Finance · Accounts Receivable · Accounts Payable · B2B BNPL · Business Lending · Cash Flow · Working Capital
 
-## Funding Products
+## Butn on APIs.io
 
-- **Butn X** — Invoice finance to draw cash early against outstanding receivables.
-- **Butn Terms** — Outsourced buyer credit terms, with Butn funding and carrying the credit risk.
-- **Butn Pay** — Pays suppliers upfront in exchange for extended repayment terms for the business.
+Everything profiled for Butn is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/butn/](https://apis.io/providers/butn/)** — or go straight to one of the APIs or properties below.
 
-These products are designed to be embedded into partner marketplaces, accounting tools, and B2B platforms (for example MYOB, Salesforce, and FoodByUs) rather than sold as a standalone destination.
+### Published properties
 
-## API Posture
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Butn markets "plug and play" embedding for platform partners, which implies partner-facing integration APIs, but it does **not** operate a public self-serve developer portal. No `developer`, `docs`, or `api` subdomain resolves, and `/developers`, `/docs`, `/api`, and `/api-docs` on the marketing site return HTTP 404. No downloadable OpenAPI/Swagger, Postman collection, or GraphQL schema is published, so none were harvested. Access to Butn's technology is provisioned privately to integration partners. See [`review.yml`](review.yml) for the full probe log and provenance.
+#### Security (1)
 
-## Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Payments
-- Australia
-- Embedded Finance
-- Invoice Finance
-- Accounts Receivable
-- Accounts Payable
-- B2B BNPL
-- Business Lending
-- Cashflow
-- Working Capital
+- [Butn Domain Security](https://apis.io/security/butn/butn-domain-security/)
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-07-24
-- **Modified:** 2026-07-24
-
-## Links
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.butn.co/)
-- [Funding Solutions](https://www.butn.co/funding-solutions)
-- [News](https://www.butn.co/news)
-- [Contact](https://www.butn.co/contact)
-- [Terms and Conditions](https://www.butn.co/terms-and-conditions)
-- [Privacy Policy](https://www.butn.co/privacy-policy)
-- [LinkedIn](https://au.linkedin.com/company/butn)
+- [Documentation](https://www.butn.co/funding-solutions)
+- [Support](https://www.butn.co/contact)
+- [Blog](https://www.butn.co/news)
+- [Terms of service](https://www.butn.co/terms-and-conditions)
+- [Privacy policy](https://www.butn.co/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 12.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.5** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/butn/](https://apis.io/providers/butn/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Butn: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/butn/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
